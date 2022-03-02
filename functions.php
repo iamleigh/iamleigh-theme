@@ -58,6 +58,7 @@ function iamleigh_setup() {
 		* to output valid HTML5.
 		*/
 	add_theme_support(
+		'editor-styles',
 		'html5',
 		array(
 			'search-form',
@@ -99,6 +100,11 @@ function iamleigh_setup() {
 			'flex-height' => true,
 		)
 	);
+
+	/**
+	 * Enqueue editor styles
+	 */
+	add_editor_style( 'style.css' );
 }
 add_action( 'after_setup_theme', 'iamleigh_setup' );
 
