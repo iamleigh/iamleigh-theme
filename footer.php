@@ -13,17 +13,23 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'iamleigh' ) ); ?>">
+			<p>
 				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'iamleigh' ), 'WordPress' );
+				/* translators: %s: Country name */
+				printf( esc_html__( 'Made with love in %s', 'iamleigh' ), 'Ecuador' );
 				?>
-			</a>
-			<span class="sep"> | </span>
+			</p>
+			<p>
 				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'iamleigh' ), 'iamleigh', '<a href="https://iamleigh.com/">Leighton Sapir</a>' );
+				/* translators: 1: Copyright name, 2: Current year, 3: Theme autor */
+				printf(
+					esc_html__( 'All visuals are protected under %1$s © %2$s %3$s', 'iamleigh' ),
+					'<a href="/">Digital Millenium Copyright Act</a>',
+					date( 'Y' ),
+					'Leighton Quito'
+				);
 				?>
+			</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
